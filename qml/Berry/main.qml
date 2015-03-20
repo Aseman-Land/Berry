@@ -39,8 +39,16 @@ AsemanMain {
     property bool aboutAseman: false
     property bool configure: false
 
+    Connections {
+        target: AsemanApp
+        onBackRequest: {
+            back()
+        }
+    }
+
     AsemanAbout {
         anchors.fill: parent
+        backButtonScale: 0.8
     }
 
     Configure {
@@ -113,7 +121,7 @@ AsemanMain {
         }
     }
 
-    Keys.onEscapePressed: back()
+    Keys.onEscapePressed: AsemanApp.back()
     Keys.onRightPressed: imageViewer.thumbnailBar.next()
     Keys.onLeftPressed: imageViewer.thumbnailBar.prev()
     Keys.onUpPressed: imageViewer.thumbnailBar.prev()
