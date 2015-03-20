@@ -128,6 +128,7 @@ void ImageMetaData::refresh()
 bool ImageMetaData::setOriExif(int ori)
 {
 #if defined(Q_OS_WIN) || defined(Q_OS_MAC)
+    Q_UNUSED(ori)
     return false;
 #else
     const QMimeType & mime = p->mdb.mimeTypeForFile(p->nsource);

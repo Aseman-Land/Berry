@@ -7,7 +7,7 @@ DEPLOYMENTFOLDERS = translation_files icon_files
 QT += widgets script
 
 unix:!macx {
-    LIBS = -lexiv2
+    LIBS += -lexiv2
 }
 win32 {
     LIBS += exiv/lib/libexiv2.dll
