@@ -57,7 +57,7 @@ Rectangle {
 
                     var cover_path = currentPath + "/.cover"
                     if( Berry.fileExists(cover_path) ) {
-                        source = cover_path
+                        source = Devices.localFilesPrePath + cover_path
                         refreshImage()
                         return
                     }
@@ -75,7 +75,7 @@ Rectangle {
                         return
                     }
 
-                    source = image_viewer.thumbnailBar.model.get(index,"filePath")
+                    source = Devices.localFilesPrePath + image_viewer.thumbnailBar.model.get(index,"filePath")
                     refreshImage()
                 }
 

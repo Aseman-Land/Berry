@@ -93,7 +93,7 @@ Item {
         if( privates.currentItem )
             item.imageIsReady.connect(privates.currentItem.hide)
 
-        item.source = Devices.localFilesPrePath + source
+        item.source = source
         privates.currentItem = item
     }
 }
