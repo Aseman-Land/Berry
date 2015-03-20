@@ -574,7 +574,6 @@ void Berry::start()
     p->viewer->engine()->addImageProvider(PATH_HANDLER_NAME,p->handler_provider);
     p->viewer->setSource(QUrl("qrc:/qml/Berry/main.qml"));
     p->viewer->resize( p->settings->value("window/size",QSize(960,600)).toSize() );
-    p->viewer->show();
 
 #ifdef Q_OS_MAC
     const QSize &dsize = QApplication::desktop()->screenGeometry().size();
@@ -598,6 +597,7 @@ void Berry::start()
     wgt->resize(p->mwin->size());
     wgt->show();
 #else
+    p->viewer->show();
 #endif
 
 #ifdef Q_OS_WIN
