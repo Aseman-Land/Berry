@@ -44,8 +44,8 @@
 #define PATH_HANDLER_NAME  "pathhandler"
 #define PATH_HANDLER_LLOCK "berrylock"
 #define PATH_HANDLER_LLOCK_THUMB "berrylock_thumb"
-#define PATH_HANDLER_LLOCK_SUFFIX "limlock"
-#define PATH_HANDLER_LLOCK_SUFFIX_THUMB "limlockthumb"
+#define PATH_HANDLER_LLOCK_SUFFIX "brylock"
+#define PATH_HANDLER_LLOCK_SUFFIX_THUMB "brylockthumb"
 
 #define ENCRYPTER_HEADER  QString("Berry Encrypted File")
 #define ENCRYPTER_VERSION 1.0

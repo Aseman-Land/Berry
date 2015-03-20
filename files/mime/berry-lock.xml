@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mime-type xmlns="http://www.freedesktop.org/standards/shared-mime-info" type="application/berry-lock">
+  <!--Created automatically by update-mime-database. DO NOT EDIT!-->
+  <comment>Berry encrypted files</comment>
+  <icon name="image-generic"/>
+  <glob-deleteall/>
+  <glob pattern="*.BRYLOCK"/>
+  <glob pattern="*.brylock"/>
+</mime-type>

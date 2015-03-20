@@ -1,12 +1,12 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=Limoo
+Name=Berry
 GenericName=Image Viewer
-Icon=/opt/sialan/limoo/icons/limoo.png
-Exec=limoo %f
+Icon=/opt/berry/files/icons/berry.png
+Exec=berry %f
 NoDisplay=false
 Categories=Graphics;Viewer;
-MimeType=inode/directory;image/gif;image/jpeg;image/png;image/bmp;image/x-eps;image/x-ico;image/x-portable-bitmap;image/x-portable-graymap;image/x-portable-pixmap;image/x-xbitmap;image/x-xpixmap;image/tiff;image/x-psd;image/x-webp;
+MimeType=inode/directory;image/jpeg;image/png;image/bmp;application/berry-lock;
 StartupNotify=true
 Terminal=false
