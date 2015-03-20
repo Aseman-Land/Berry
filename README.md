@@ -20,7 +20,7 @@ If you want get source from git repository you should install git on your system
 
 After git installed, get code with this command:
 
-    git clone https://github.com/aseman-labs/berry.git
+    git clone https://github.com/Aseman-Land/Berry.git
 
 #### Start building
 
