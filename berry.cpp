@@ -187,7 +187,7 @@ QString Berry::aboutBerry() const
 
 QString Berry::version() const
 {
-    return "1.1.0";
+    return "1.0.0";
 }
 
 QSize Berry::imageSize(QString path) const

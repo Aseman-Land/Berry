@@ -13,7 +13,7 @@ win32 {
 #    LIBS += exiv/lib/libexiv2.dll
 #    INCLUDEPATH += exiv/include
     QT += winextras
-    RC_FILE = files/papyrus.rc
+    RC_FILE = files/berry.rc
 }
 
 SOURCES += main.cpp \
