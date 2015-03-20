@@ -4,7 +4,7 @@ translation_files.source = files/translations
 translation_files.target = $${DESTDIR}/files
 DEPLOYMENTFOLDERS = translation_files icon_files
 
-QT += widgets script
+QT += widgets
 
 unix:!macx {
     LIBS += -lexiv2

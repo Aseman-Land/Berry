@@ -47,6 +47,8 @@
 #include <QScreen>
 #include <QStringList>
 #include <QMimeDatabase>
+#include <QDesktopWidget>
+#include <QApplication>
 
 #ifdef Q_OS_MAC
 #include <QMainWindow>
@@ -575,6 +577,8 @@ void Berry::start()
     p->viewer->show();
 
 #ifdef Q_OS_MAC
+    const QSize &dsize = QApplication::desktop()->screenGeometry().size();
+
     QWidget *containter = QWidget::createWindowContainer(p->viewer);
     containter->setWindowFlags(Qt::Widget);
 
@@ -582,6 +586,7 @@ void Berry::start()
     p->mwin->addToolBar( new QToolBar() );
     p->mwin->setUnifiedTitleAndToolBarOnMac(true);
     p->mwin->resize( p->viewer->size() );
+    p->mwin->move( dsize.width()/2-p->viewer->width()/2, dsize.height()/2-p->viewer->height()/2 );
     p->mwin->installEventFilter(this);
     p->mwin->show();
 
