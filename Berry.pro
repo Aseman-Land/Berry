@@ -85,6 +85,8 @@ linux {
     icons.path = $$SHARES_PATH/icons/
     desktopFile.files = $$APPDESK_SRC/berry.desktop
     desktopFile.path = $$APPDESK_PATH/share/applications
+    mimeFile.files = files/mime/berry-lock.xml
+    mimeFile.path = $$APPDESK_PATH/share/mime/application
 
     INSTALLS = target translations icons desktopFile
 }
