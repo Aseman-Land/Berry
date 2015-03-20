@@ -10,9 +10,10 @@ unix:!macx {
     LIBS += -lexiv2
 }
 win32 {
-    LIBS += exiv/lib/libexiv2.dll
-    INCLUDEPATH += exiv/include
+#    LIBS += exiv/lib/libexiv2.dll
+#    INCLUDEPATH += exiv/include
     QT += winextras
+    RC_FILE = files/papyrus.rc
 }
 
 SOURCES += main.cpp \
