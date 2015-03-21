@@ -64,6 +64,7 @@ Rectangle {
             textColor: Desktop.titleBarTextColor
             highlightColor: "#22000000"
             textFont.bold: false
+            textFont.pixelSize: Math.floor(10*Devices.fontDensity)
             onClicked: main.back()
         }
 
@@ -75,6 +76,7 @@ Rectangle {
             textColor: Desktop.titleBarTextColor
             highlightColor: "#22000000"
             textFont.bold: false
+            textFont.pixelSize: Math.floor(10*Devices.fontDensity)
             visible: viewMode
             onClicked: main.edit([main.mainFrame.imageViewer.thumbnailBar.currentPath])
         }
@@ -87,6 +89,7 @@ Rectangle {
             textColor: Desktop.titleBarTextColor
             highlightColor: "#22000000"
             textFont.bold: false
+            textFont.pixelSize: Math.floor(10*Devices.fontDensity)
             visible: viewMode
             onClicked: main.mainFrame.imageViewer.imageSlider.rotateRight()
         }
@@ -99,6 +102,7 @@ Rectangle {
             textColor: Desktop.titleBarTextColor
             highlightColor: "#22000000"
             textFont.bold: false
+            textFont.pixelSize: Math.floor(10*Devices.fontDensity)
             visible: viewMode
             onClicked: main.mainFrame.imageViewer.imageSlider.rotateLeft()
         }
@@ -111,6 +115,7 @@ Rectangle {
             textColor: Desktop.titleBarTextColor
             highlightColor: "#22000000"
             textFont.bold: false
+            textFont.pixelSize: Math.floor(10*Devices.fontDensity)
             onClicked: Berry.fullScreen = !Berry.fullScreen
         }
 
@@ -122,6 +127,7 @@ Rectangle {
             textColor: Desktop.titleBarTextColor
             highlightColor: "#22000000"
             textFont.bold: false
+            textFont.pixelSize: Math.floor(10*Devices.fontDensity)
             onClicked: main.about = true
         }
 
@@ -134,6 +140,7 @@ Rectangle {
             textColor: Desktop.titleBarTextColor
             highlightColor: "#22000000"
             textFont.bold: false
+            textFont.pixelSize: Math.floor(10*Devices.fontDensity)
             onClicked: main.aboutAseman = true
         }
     }
@@ -149,6 +156,7 @@ Rectangle {
         textColor: Desktop.titleBarTextColor
         highlightColor: "#22000000"
         textFont.bold: false
+        textFont.pixelSize: Math.floor(10*Devices.fontDensity)
         onClicked: configure = !configure
     }
 

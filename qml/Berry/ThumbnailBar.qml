@@ -163,6 +163,8 @@ Item {
                     startPos = Qt.point(mouseX, mouseY)
                 }
 
+                onReleased: drag_timer.stop()
+
                 onClicked: {
                     if( mouse.button == Qt.LeftButton && mouse.modifiers == Qt.ControlModifier ) {
                         if( fileIsDir )
