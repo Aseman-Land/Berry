@@ -24,7 +24,7 @@ Rectangle {
     id: toolbar
     height: 40*Devices.density
     clip: true
-    color: blurBack && Desktop.desktopSession != AsemanDesktopTools.Unity? Desktop.titleBarTransparentColor : Desktop.titleBarColor
+    color: blurBack? Desktop.titleBarTransparentColor : Desktop.titleBarColor
 
     Rectangle {
         anchors.fill: parent
@@ -52,7 +52,6 @@ Rectangle {
 
     Row {
         anchors.top: parent.top
-        anchors.topMargin: 1*Devices.density
         anchors.bottom: parent.bottom
         anchors.left: parent.left
         spacing: 6*Devices.density

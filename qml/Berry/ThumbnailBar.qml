@@ -121,12 +121,48 @@ Item {
                 folderPath: fileIsDir? filePath : ""
             }
 
+            MimeData {
+                id: mime
+                urls: [Devices.localFilesPrePath + filePath]
+                text: filePath
+            }
+
+            DragObject {
+                id: drag
+                source: marea
+                hotSpot: Qt.point(20*Devices.density, 20*Devices.density)
+                mimeData: mime
+            }
+
+            Timer {
+                id: drag_timer
+                interval: 300
+                onTriggered: drag.start()
+            }
+
             MouseArea {
                 id: marea
                 hoverEnabled: true
                 anchors.fill: parent
                 anchors.margins: grid.spacing/2
                 acceptedButtons: Qt.LeftButton | Qt.RightButton
+
+                property point startPos
+
+                onPositionChanged: {
+                    var dx = mouseX - startPos.x
+                    var dy = mouseY - startPos.y
+                    var l = Math.pow(dx*dx+dy*dy, 0.5)
+                    if(l>10)
+                        drag_timer.stop()
+                }
+
+                onPressed: {
+                    if(!fileIsDir)
+                        drag_timer.start()
+                    startPos = Qt.point(mouseX, mouseY)
+                }
+
                 onClicked: {
                     if( mouse.button == Qt.LeftButton && mouse.modifiers == Qt.ControlModifier ) {
                         if( fileIsDir )

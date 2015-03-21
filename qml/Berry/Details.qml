@@ -60,7 +60,7 @@ Item {
             text: Berry.fileName(details.source)
             color: "#000000"
             wrapMode: Text.WrapAnywhere
-            font.pixelSize: 19*Devices.density
+            font.pixelSize: 19*Devices.fontDensity
             font.bold: true
         }
 
@@ -69,7 +69,7 @@ Item {
             anchors.horizontalCenter: parent.horizontalCenter
             text: img_size.width + "x" + img_size.height
             color: "#000000"
-            font.pixelSize: 11*Devices.density
+            font.pixelSize: 11*Devices.fontDensity
 
             property size img_size: Berry.imageSize(details.source)
         }
@@ -79,7 +79,7 @@ Item {
             anchors.horizontalCenter: parent.horizontalCenter
             text: Math.floor(Berry.fileSize(details.source)/(1024)) + "KB"
             color: "#000000"
-            font.pixelSize: 11*Devices.density
+            font.pixelSize: 11*Devices.fontDensity
         }
     }
 

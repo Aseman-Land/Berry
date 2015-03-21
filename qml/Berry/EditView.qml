@@ -60,7 +60,7 @@ Item {
         id: title
         x: 100
         y: 100
-        font.pixelSize: 30
+        font.pixelSize: 30*Devices.fontDensity
         font.weight: Font.Light
         font.family: AsemanApp.globalFont.family
         color: "#333333"
