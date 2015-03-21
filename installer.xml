@@ -1,6 +1,6 @@
 <project>
-    <shortName>limoo</shortName>
-    <fullName>Limoo</fullName>
+    <shortName>berry</shortName>
+    <fullName>Berry</fullName>
     <version>1.1.0</version>
     <licenseFile>LICENSE</licenseFile>
     <htmlLicenseFile>LICENSE.html</htmlLicenseFile>
@@ -15,11 +15,11 @@
             <show>1</show>
             <desktopShortcutList>
                 <shortcut>
-                    <comment>Limoo Image Viewer</comment>
-                    <exec>${installdir}/limoo/Limoo</exec>
-                    <icon>${installdir}/limoo/icon/icon.png</icon>
-                    <name>Limoo</name>
-                    <path>${installdir}/limoo/</path>
+                    <comment>Berry Image Viewer</comment>
+                    <exec>${installdir}/berry/berry</exec>
+                    <icon>${installdir}/berry/files/icons/berry.png</icon>
+                    <name>Berry</name>
+                    <path>${installdir}/berry/</path>
                     <platforms>all</platforms>
                     <runAsAdmin>0</runAsAdmin>
                     <runInTerminal>0</runInTerminal>
@@ -59,7 +59,7 @@
                     <platforms>linux</platforms>
                     <distributionFileList>
                         <distributionDirectory>
-                            <origin>../Releases/Limoo/Linux/32/limoo</origin>
+                            <origin>../../../Releases/Berry/Linux/32/berry</origin>
                         </distributionDirectory>
                     </distributionFileList>
                 </folder>
@@ -82,7 +82,7 @@
                     <platforms>linux-x64</platforms>
                     <distributionFileList>
                         <distributionDirectory>
-                            <origin>../Releases/Limoo/Linux/64/limoo</origin>
+                            <origin>../../../Releases/Berry/Linux/64/berry</origin>
                         </distributionDirectory>
                     </distributionFileList>
                 </folder>

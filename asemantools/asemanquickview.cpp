@@ -126,6 +126,8 @@ AsemanQuickView::AsemanQuickView(int options, QWindow *parent) :
     qmlRegisterType<AsemanSensors>("AsemanTools", 1,0, "AsemanSensors");
 #endif
 
+    qmlRegisterUncreatableType<AsemanDesktopTools>("AsemanTools", 1,0, "AsemanDesktopTools", "It's a singleton class");
+
     setResizeMode(QQuickView::SizeRootObjectToView);
     init_options();
 

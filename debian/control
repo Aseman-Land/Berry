@@ -1,7 +1,7 @@
 Source: berry
 Section: text
 Priority: optional
-Maintainer: Aseman <contact@aseman.org>
+Maintainer: Aseman Team <contact@aseman.co>
 Build-Depends:
  debhelper (>= 8.0.0),
  g++ (>= 4:4.7),
@@ -23,13 +23,14 @@ Build-Depends:
  qtmultimedia5-dev (>= 5.2.0),
  libexiv2-dev 
 Standards-Version: 3.9.5
-Homepage: http://aseman.co/projects/berry
-Vcs-Git: git://git@github.com:aseman-labs/berry.git
-Vcs-Browser: https://github.com/aseman-labs/berry/
+Homepage: http://aseman.co/berry
+Vcs-Git: git://git@github.com:Aseman-Land/Berry.git
+Vcs-Browser: https://github.com/Aseman-Land/Berry/
 
 Package: berry
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libqt5sensors5-dev (>= 5.2.0), libqt5sensors5 (>= 5.2.0), libqt5qml-quickcontrols (>= 5.2.0), libqt5qml-graphicaleffects (>= 5.2.0), libqt5positioning5 (>= 5.2.0), libqt5multimedia5 (>= 5.2.0), libqt5multimedia5-plugins (>= 5.2.0), libqt5multimediaquick-p5 (>= 5.2.0), libqt5sql5-sqlite (>= 5.2.0), qtdeclarative5-qtmultimedia-plugin (>= 5.2.0), qtdeclarative5-folderlistmodel-plugin (>= 5.2.0), qtdeclarative5-qtmultimedia-plugin (>= 5.2.0), dconf-tools
-Description: Berry image viewer
- Berry is an image viewer that created on the aseman. 
- Its using Qt5 and Qml technology.
+Depends: ${shlibs:Depends}, ${misc:Depends}, libqt5sensors5 (>= 5.2.0), libqt5qml-quickcontrols (>= 5.2.0), libqt5qml-graphicaleffects (>= 5.2.0), libqt5positioning5 (>= 5.2.0), libqt5multimedia5 (>= 5.2.0), libqt5multimedia5-plugins (>= 5.2.0), libqt5multimediaquick-p5 (>= 5.2.0), libqt5sql5-sqlite (>= 5.2.0), qtdeclarative5-qtmultimedia-plugin (>= 5.2.0), qtdeclarative5-folderlistmodel-plugin (>= 5.2.0), qtdeclarative5-qtmultimedia-plugin (>= 5.2.0), dconf-tools
+Homepage: http://aseman.co/berry
+Description: Berry Image Viewer
+ Berry is multiplatform and modern image viewer, focused on better user interface.
+ Berry is free and open source and released under GPLv3 license.

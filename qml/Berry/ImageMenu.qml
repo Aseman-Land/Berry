@@ -189,7 +189,7 @@ Rectangle {
             icon: "files/background.png"
             textColor: "#ffffff"
             highlightColor: "#22ffffff"
-            visible: !directory && !img_menu.isEncrypted && (Desktop.desktopSession == Desktop.Gnome || Desktop.desktopSession == Desktop.Unity)
+            visible: !directory && !img_menu.isEncrypted && (Desktop.desktopSession == AsemanDesktopTools.Gnome || Desktop.desktopSession == AsemanDesktopTools.Unity)
             onClicked: {
                 Berry.setWallpaper(img_menu.source)
                 main.hideMenu()

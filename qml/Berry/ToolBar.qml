@@ -24,11 +24,11 @@ Rectangle {
     id: toolbar
     height: 40*Devices.density
     clip: true
-    color: blurBack && Desktop.desktopSession != Desktop.Unity? Desktop.titleBarTransparentColor : Desktop.titleBarColor
+    color: blurBack && Desktop.desktopSession != AsemanDesktopTools.Unity? Desktop.titleBarTransparentColor : Desktop.titleBarColor
 
     Rectangle {
         anchors.fill: parent
-        opacity: Desktop.desktopSession != Desktop.Unity && Desktop.desktopSession != Desktop.Gnome && Desktop.desktopSession != Desktop.Mac? 0 : 1
+        opacity: Desktop.desktopSession != AsemanDesktopTools.Unity && Desktop.desktopSession != AsemanDesktopTools.Gnome && Desktop.desktopSession != AsemanDesktopTools.Mac? 0 : 1
         gradient: Gradient {
             GradientStop { position: 0.0; color: "#20000000" }
             GradientStop { position: 0.7; color: "#00000000" }

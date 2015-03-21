@@ -6,6 +6,10 @@ DEPLOYMENTFOLDERS = translation_files icon_files
 
 QT += widgets
 
+linux {
+    TARGET = berry
+}
+
 unix:!macx {
     LIBS += -lexiv2
 }
@@ -88,7 +92,7 @@ linux {
     mimeFile.files = files/mime/berry-lock.xml
     mimeFile.path = $$APPDESK_PATH/share/mime/application
 
-    INSTALLS = target translations icons desktopFile
+    INSTALLS = target translations icons desktopFile mimeFile
 }
 }
 
