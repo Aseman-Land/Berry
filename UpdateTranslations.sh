@@ -12,7 +12,7 @@ if [ "${SIALAN_SRC_PATH}" = "" ]; then
 fi
 
 cd $SIALAN_SRC_PATH
-for TRANSLATION in ./translations_sources/*.ts
+for TRANSLATION in ./files/translations_sources/*.ts
 do
     lupdate `find -name '*.cpp' -type f` \
             `find -name '*.qml' -type f` \
