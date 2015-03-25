@@ -7,6 +7,6 @@ Icon=/opt/berry/files/icons/berry.png
 Exec=berry %f
 NoDisplay=false
 Categories=Graphics;Viewer;
-MimeType=inode/directory;image/jpeg;image/png;image/bmp;application/berry-lock;
+MimeType=inode/directory;image/gif;image/jpeg;image/png;image/bmp;image/x-eps;image/x-ico;image/x-portable-bitmap;image/x-portable-graymap;image/x-portable-pixmap;image/x-xbitmap;image/x-xpixmap;image/tiff;image/x-psd;image/x-webp;application/berry-lock;
 StartupNotify=true
 Terminal=false

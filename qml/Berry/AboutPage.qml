@@ -52,7 +52,7 @@ Rectangle {
     }
 
     Button {
-        id: donate_btn
+        id: home_btn
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.bottom: parent.bottom
         anchors.bottomMargin: 70*Devices.density
@@ -107,24 +107,6 @@ Rectangle {
     }
 
     Text {
-        id: home_btn
-        anchors.right: parent.right
-        anchors.bottom: website.top
-        anchors.margins: 8*Devices.density
-        font.family: AsemanApp.globalFont.family
-        font.pixelSize: 10*Devices.fontDensity
-        color: "#333333"
-        text: qsTr("HomePage")
-
-        MouseArea {
-            anchors.fill: parent
-            anchors.margins: -8*Devices.density
-            cursorShape: Qt.PointingHandCursor
-            onClicked: Qt.openUrlExternally("http://aseman.co/berry")
-        }
-    }
-
-    Text {
         id: website
         anchors.right: parent.right
         anchors.bottom: parent.bottom
@@ -138,7 +120,7 @@ Rectangle {
     LanguageSwitcher {
         onRefresh: {
             back_btn.text = qsTr("Back")
-            donate_btn.text = qsTr("Home Page")
+            home_btn.text = qsTr("Home Page")
             berry_txt.text = qsTr("Berry")
             about_text.text = Berry.aboutBerry()
         }

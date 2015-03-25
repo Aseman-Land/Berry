@@ -48,7 +48,7 @@ AsemanMain {
 
     AsemanAbout {
         anchors.fill: parent
-        backButtonScale: 0.8
+        backButtonScale: 0.82
     }
 
     Configure {
