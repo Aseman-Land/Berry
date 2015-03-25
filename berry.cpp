@@ -642,7 +642,7 @@ void Berry::init_languages()
          p->languages.insert( lang, data );
          p->locales.insert( lang , locale );
 
-         if( lang == p->settings->value("General/language","English").toString() )
+         if( lang == p->settings->value("General/currentLanguage","English").toString() )
              setCurrentLanguage( lang );
     }
 }
