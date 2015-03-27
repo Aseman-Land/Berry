@@ -1,3 +1,9 @@
+berry (1.0.0-2aseman) trusty; urgency=low
+
+  * Bugfix.
+
+ -- Aseman Team <contact@aseman.co>  Sun, 25 March 2015 16:16:45 +0330
+
 berry (1.0.0-1aseman) trusty; urgency=low
 
   * Improve on packaging.
