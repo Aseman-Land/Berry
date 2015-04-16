@@ -36,6 +36,7 @@ Item {
 
     signal addSelect( string filePath )
     signal selected( string filePath )
+    signal listChanged()
 
     MouseArea {
         id: back_mouse
@@ -62,6 +63,7 @@ Item {
             sortField: FileSystemModel.Name
             nameFilters: thumbnailbar.filters
             onFolderChanged: grid.positionViewAtBeginning()
+            onListChanged: thumbnailbar.listChanged()
         }
 
         cellWidth: width/(cellCount==0? 1 : cellCount)

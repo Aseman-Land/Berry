@@ -49,7 +49,7 @@ Rectangle {
                 property string defaultSource: "files/default-background.jpg"
 
                 property string currentPath: image_viewer.thumbnailBar.model.folder
-                onCurrentPathChanged: back_img.refresh()
+//                onCurrentPathChanged: back_img.refresh()
 
                 function refresh() {
                     if( !blurBack )
@@ -105,6 +105,7 @@ Rectangle {
             anchors.leftMargin: basket_item.visible? basket_item.width : 0
             headerHeight: toolbar_frame.height
             onAddSelect: basket_item.add(filePath)
+            onListChanged: back_img.refresh()
         }
     }
 

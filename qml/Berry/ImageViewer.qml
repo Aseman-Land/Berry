@@ -38,6 +38,7 @@ Rectangle {
     property bool anim: false
 
     signal addSelect( string filePath )
+    signal listChanged()
 
     onViewModeChanged: {
         anim = true
@@ -163,6 +164,7 @@ Rectangle {
                 if( visible )
                     return_timer.restart()
             }
+            onListChanged: viewer.listChanged()
 
             Timer {
                 id: return_timer
