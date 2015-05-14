@@ -34,9 +34,12 @@
 #include "asemanquickobject.h"
 #include "asemancountriesmodel.h"
 #include "asemanquickitemimagegrabber.h"
+#include "asemanfiledownloaderqueueitem.h"
+#include "asemanfiledownloaderqueue.h"
 #include "asemannotification.h"
 #include "asemanautostartmanager.h"
 #include "asemanmimeapps.h"
+#include "asemanwebpagegrabber.h"
 #ifdef Q_OS_ANDROID
 #include "asemanjavalayer.h"
 #endif
@@ -124,7 +127,10 @@ AsemanQuickView::AsemanQuickView(int options, QWindow *parent) :
     qmlRegisterType<AsemanFileSystemModel>("AsemanTools", 1,0, "FileSystemModel");
     qmlRegisterType<AsemanAutoStartManager>("AsemanTools", 1,0, "AutoStartManager");
     qmlRegisterType<AsemanQuickItemImageGrabber>("AsemanTools", 1,0, "ItemImageGrabber");
+    qmlRegisterType<AsemanFileDownloaderQueueItem>("AsemanTools", 1,0, "FileDownloaderQueueItem");
+    qmlRegisterType<AsemanFileDownloaderQueue>("AsemanTools", 1,0, "FileDownloaderQueue");
     qmlRegisterType<AsemanMimeApps>("AsemanTools", 1,0, "MimeApps");
+    qmlRegisterType<AsemanWebPageGrabber>("AsemanTools", 1,0, "WebPageGrabber");
 
 #ifdef ASEMAN_SENSORS
     qmlRegisterType<AsemanSensors>("AsemanTools", 1,0, "AsemanSensors");
