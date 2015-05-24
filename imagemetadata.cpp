@@ -18,7 +18,7 @@
 
 #include "imagemetadata.h"
 
-#ifdef Q_OS_LINUX
+#if defined(Q_OS_LINUX) || defined(Q_OS_UNIX)
 #include <exiv2/image.hpp>
 #endif
 
