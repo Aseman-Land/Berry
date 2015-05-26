@@ -6,7 +6,7 @@ DEPLOYMENTFOLDERS = translation_files icon_files
 
 QT += widgets
 
-linux {
+linux|openbsd {
     TARGET = berry
 }
 
@@ -80,7 +80,7 @@ contains(BUILD_MODE,opt) {
 
 android {
 } else {
-linux {
+linux|openbsd {
     target = $$TARGET
     target.path = $$BIN_PATH
     translations.files = $$TRANSLATIONS
